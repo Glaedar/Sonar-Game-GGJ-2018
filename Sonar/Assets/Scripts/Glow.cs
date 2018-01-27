@@ -28,7 +28,7 @@ public class Glow : MonoBehaviour
         }
 
         delay -= Time.deltaTime;
-        Debug.LogError("Delay: " + delay);
+ 
 
     }
 
@@ -57,11 +57,27 @@ public class Glow : MonoBehaviour
         Behaviour halo = (Behaviour)GetComponent("Halo");
         // halo.enabled = false;
 
-        if (other.gameObject.name == "Sphere")
+        if (other.gameObject.name == "EchoRing1")
         {
             halo.enabled = true;
             glowDelay = 3;
         }
+        if (other.gameObject.name == "EchoRing2")
+        {
+            halo.enabled = true;
+            glowDelay = 3;
+        }
+        if (other.gameObject.name == "EchoRing3")
+        {
+            halo.enabled = true;
+            glowDelay = 3;
+        }
+        if (other.gameObject.name == "EchoRing4")
+        {
+            halo.enabled = true;
+            glowDelay = 3;
+        }
+
     }
 }
 //
