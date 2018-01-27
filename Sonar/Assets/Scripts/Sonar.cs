@@ -10,7 +10,7 @@ public class Sonar : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             this.gameObject.GetComponent<Collider>().enabled = true;
             //this.GetComponent<Light>().enabled = true;

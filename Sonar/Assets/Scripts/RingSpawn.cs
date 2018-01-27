@@ -24,7 +24,7 @@ public class RingSpawn : MonoBehaviour {
     {
         Behaviour halo = (Behaviour)GetComponent("Halo");
 
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             //lDelay = lightDelay;
             //rDelay = ringDelay;
@@ -38,7 +38,7 @@ public class RingSpawn : MonoBehaviour {
             {
 
                 this.gameObject.GetComponent<MeshRenderer>().enabled = true;
-                //halo.enabled = true;
+                halo.enabled = true;
                 this.gameObject.GetComponent<Collider>().enabled = true;
 
             }
