@@ -7,6 +7,8 @@ public class Glow : MonoBehaviour
 
     float glowDelay;
     float delay;
+
+    bool hasCollided = false;
     // Use this for initialization
     void Start()
     {
@@ -25,9 +27,13 @@ public class Glow : MonoBehaviour
         if (delay <= 0)
         {
             halo.enabled = false;
+            hasCollided = false;
         }
 
-        delay -= Time.deltaTime;
+        if (hasCollided == true)
+        {
+            delay -= Time.deltaTime;
+        }
  
 
     }
@@ -60,22 +66,29 @@ public class Glow : MonoBehaviour
         if (other.gameObject.name == "EchoRing1")
         {
             halo.enabled = true;
-            glowDelay = 3;
+            glowDelay = 4;
+            hasCollided = true;
         }
         if (other.gameObject.name == "EchoRing2")
         {
             halo.enabled = true;
-            glowDelay = 3;
+            glowDelay = 4;
+            hasCollided = true;
+
         }
         if (other.gameObject.name == "EchoRing3")
         {
             halo.enabled = true;
-            glowDelay = 3;
+            glowDelay = 4;
+            hasCollided = true;
+
         }
         if (other.gameObject.name == "EchoRing4")
         {
             halo.enabled = true;
-            glowDelay = 3;
+            glowDelay = 4;
+            hasCollided = true;
+
         }
 
     }

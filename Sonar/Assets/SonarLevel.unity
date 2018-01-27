@@ -209,7 +209,7 @@ Halo:
   m_Color:
     serializedVersion: 2
     rgba: 4286611584
-  m_Size: 0.94
+  m_Size: 2.25
 --- !u!114 &42162222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -880,6 +880,10 @@ Prefab:
     - target: {fileID: 2300000, guid: 88be4beb25b91434cac04441a61343ca, type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: 88be4beb25b91434cac04441a61343ca, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 88be4beb25b91434cac04441a61343ca, type: 3}
