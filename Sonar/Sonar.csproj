@@ -290,6 +290,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\CameraController.cs" />
     <Compile Include="Assets\Scripts\CharacterController.cs" />
+    <Compile Include="Assets\Scripts\Flash.cs" />
     <Compile Include="Assets\Scripts\Glow.cs" />
     <Compile Include="Assets\Scripts\RingSpawn.cs" />
     <Compile Include="Assets\Scripts\Sonar.cs" />
