@@ -23,6 +23,8 @@ public class RingSpawn : MonoBehaviour {
 	void Update ()
     {
         Behaviour halo = (Behaviour)GetComponent("Halo");
+        Light myLight = (Light)GetComponent("Light");
+
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -39,6 +41,7 @@ public class RingSpawn : MonoBehaviour {
 
                 this.gameObject.GetComponent<MeshRenderer>().enabled = true;
                 halo.enabled = true;
+                myLight.enabled = true;
                 this.gameObject.GetComponent<Collider>().enabled = true;
 
             }
@@ -50,11 +53,13 @@ public class RingSpawn : MonoBehaviour {
 
             rDelay += Time.deltaTime;
 
-            if (rDelay >= ringDelay + 4)
+            if (rDelay >= ringDelay + 2)
             {
                 isRingActive = false;
                 this.gameObject.GetComponent<MeshRenderer>().enabled = false;
                 halo.enabled = false;
+                myLight.enabled = false;
+
                 this.gameObject.GetComponent<Collider>().enabled = false;
                 timeStart = false;
                 rDelay = 0;
