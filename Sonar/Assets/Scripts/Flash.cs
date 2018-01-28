@@ -12,6 +12,5 @@ public class Flash : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         Behaviour halo = (Behaviour)GetComponent("Halo");
-        halo.transform.
     }
 }
